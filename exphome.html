@@ -1,0 +1,75 @@
+{%extends 'base.html'%}
+{%block title%}
+Home
+    {%endblock%}
+{%block content%}
+<section id="Expense">
+<center>
+    <div class="col-md-8" style="background-color:cornsilk;width: 900px;height: 900px;">
+        <form action="logout">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;<input style="width: 100px;" type="submit" class="btn btn-secondary" value="Logout"/>
+        </form>
+    <div class="container">
+        <div class="row" style="align-items: center;">
+            <div class="col-md-12">
+                <h1 style="font-family:initial;   color:midnightblue  " class="text-center display-4">Welcome</h1>
+            </div>
+            <div class="col-md-12">
+                <h3 style="font-family:initial;color: midnightblue;"  class="text-center display-4">Expense Tracker</h3>
+            </div>
+            <div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+          
+            <div style="background-color:linen; width: 1100px; height: 300px;"  class="col-md-6">
+                <br><br><br><br>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="{% url 'viewex' %}" <input style="width: 100px;" type="submit" class="btn btn-secondary" value="view"/>View</a>
+
+
+                    </div>
+
+                    <div class="col-md-3">
+
+
+
+         <a href="{% url 'add'%}" <input style="width: 100px;" type="submit" class="btn btn-success" value="Add"/>Add</a>
+
+</div>
+<div class="col-md-3">
+
+    <a href="{% url 'update' %}"<input style="width: 100px;"  type="submit" class="btn btn-primary" value="Update"/>Update Balance</a>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <a href="{% url 'delete' %}"<input style="width: 100px;"  type="submit" class="btn btn-danger" value="Delete"/>Delete</a>
+    
+        </div>
+   
+</div>
+            </div>
+    </div>
+            
+        </div>
+    </div>
+    </div>
+
+</center>
+    
+</section>
+{%endblock%}
